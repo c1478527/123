@@ -8,6 +8,7 @@
     <title>產業新尖兵</title>
     <link rel="stylesheet" href="style.css">
      <style>
+       
        th {
   text-shadow: 2px 2px 5px red;
 }
@@ -24,6 +25,7 @@ table {
 
 
         body ::before{
+            
 
  content: "";
  position: fixed;
@@ -37,17 +39,15 @@ table {
  
 
 }
- 
+
 body
-p {
-  table-layout: 2px solid rgb(129, 125, 125);
-  border-radius: 5px;
-}
 
 p.one {
-  border-style:hidden;
-  border-color: rgb(85, 37, 37) rgb(11, 235, 11) rgb(192, 192, 240) rgb(112, 112, 25); /* red top, green right, blue bottom and yellow left */
+ border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) 30% round;
 }
+ 
 table {
   width: 100%;
 }
