@@ -24,13 +24,20 @@
            border: 1px rgb(0, 60, 255);
             background-color: cadetblue;
             }
-            able, th, td {
+            table, th, td {
   border: 1px solid black;
 }
 
 /* 折疊為單一邊框 */
 table {
   border-collapse: collapse;
+}
+th {
+  text-align: center;
+}
+
+td {
+  vertical-align: bottom;
 }
 
            
@@ -40,21 +47,12 @@ table {
     <div class="alert alert-primary" role="alert">
         資產負載表
       </div>
-      <div class="content">
-        <div class="row">
-          <div class="col-sm">
-           資產
-          </div>
-          <div class="col-sm">
-           負債及股東權益
-          </div>
-        
-        </div>
+    
       </div>
       <table>
         <tr>
-          <th>Firstname</th>
-          <th>Lastname</th>
+          <th>資產</th>
+          <th>負債及股東權益</th>
         </tr>
         <tr>
           <td>Peter</td>
