@@ -7,23 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise 10</title>
     <style type="text/css">
+  
+    
         body {
             min-height: 80vh;
             display: flex;
             justify-content: center;
             align-items: center;
+            
         }
         
         table {
             border-collapse: collapse;
+            background-image: url(https://i.imgur.com/ulrYqt9.jpg);
+            
+            text-align: center;
         }
         
         table thead th {
-            background-color: rgb(181, 227, 255)
+            background-color: rgb(181, 227, 255);
+            
         }
         
         tbody th,
         tbody td {
+            
             border-collapse: collapse;
             padding: 5px;
             border: 1px lightgray solid;
@@ -31,12 +39,25 @@
             vertical-align: middle;
             width: 200px;
             height: 200px;
+            
         }
         /* 請在此加入更多 style */
-    td::before{
-        content: url(https://i.imgur.com/ulrYqt9.jpg);
-    }
+        #P1{
+   
+    position:absolute;
+    top:0px;
+    left:0px;
+    z-index:-1;
+}
+#P2{
+    
+    position:absolute;
+    top:auto;
+    left:auto;
+    z-index:0;
+}
     </style>
+    
     <link rel="stylesheet" href="path/to/style.css"/>
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -56,7 +77,11 @@
             </tr>
             <tr>
                 <td></td>
-                <td></td>
+                
+                <td style="position:relative";>
+                    <img src="https://i.imgur.com/wivmnTul.png" id="P1">
+                    <img src="https://i.imgur.com/FR8QCdJ.gif" id="P2"></td>
+                
                 <td></td>
             </tr>
             <tr>
@@ -64,6 +89,7 @@
                 <td></td>
                 <td></td>
             </tr>
+            
         </tbody>
     </table>
 </body>
